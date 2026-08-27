@@ -1,0 +1,145 @@
+﻿/* ============================================================
+   自定义样式 - 深色专业文档风格 (GitHub Dark 风格)
+   ============================================================ */
+
+/* ── Body & 字体 ─────────────────────────────────────────── */
+body {
+  font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── 侧边栏整体 ──────────────────────────────────────────── */
+.side-bar {
+  width: 220px !important;
+  min-width: 220px !important;
+  font-size: 12.5px !important;
+}
+
+/* 站点标题 - 修复遮挡 */
+.site-title {
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  padding: 14px 16px !important;
+  word-break: break-all !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+/* ── 导航链接 - 防止换行 ─────────────────────────────────── */
+.nav-list-link {
+  font-size: 12px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  line-height: 1.4 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+}
+
+/* 二级导航（章节）*/
+.nav-list .nav-list .nav-list-link {
+  font-size: 11.5px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+/* 当前激活项 */
+.nav-list-link.active {
+  font-weight: 600 !important;
+  border-right: 2px solid #58a6ff !important;
+  background: rgba(88, 166, 255, 0.1) !important;
+}
+
+/* ── 内容区域 ────────────────────────────────────────────── */
+.main-content-wrap {
+  max-width: 920px !important;
+  padding: 32px 40px !important;
+}
+
+/* 标题 */
+.main-content h1 {
+  font-size: 1.9rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+}
+
+.main-content h2 {
+  font-size: 1.35rem !important;
+  font-weight: 600 !important;
+  margin-top: 40px !important;
+}
+
+.main-content h3 {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+}
+
+/* 代码块 */
+.highlight {
+  border-radius: 8px !important;
+  margin: 16px 0 !important;
+}
+
+.highlight pre {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace !important;
+  font-size: 13px !important;
+  padding: 16px 20px !important;
+}
+
+/* 内联代码 */
+.main-content p code,
+.main-content li code,
+.main-content td code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  font-size: 0.88em !important;
+  padding: 1px 6px !important;
+  border-radius: 4px !important;
+}
+
+/* 表格 */
+.main-content table {
+  font-size: 13.5px !important;
+}
+
+.main-content table th {
+  font-weight: 600 !important;
+  padding: 10px 14px !important;
+}
+
+.main-content table td {
+  padding: 9px 14px !important;
+  vertical-align: top !important;
+}
+
+/* 图片 */
+.main-content img {
+  max-width: 100% !important;
+  border-radius: 8px !important;
+  margin: 12px 0 !important;
+}
+
+/* 段落 */
+.main-content p {
+  line-height: 1.75 !important;
+  margin-bottom: 14px !important;
+}
+
+/* ── 搜索框 ──────────────────────────────────────────────── */
+.search-input {
+  font-size: 13px !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* ── 滚动条美化 ───────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #484f58;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6e7681;
+}
