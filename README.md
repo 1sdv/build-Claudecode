@@ -1,5 +1,5 @@
 ﻿---
-layout: home
+layout: default
 title: 首页
 nav_order: 1
 description: "深入 Claude Code 源码：从架构到实践，构建你自己的 AI 编程代理"
