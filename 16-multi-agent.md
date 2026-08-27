@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch16 多代理系统"
+title: "16 多代理系统"
 nav_order: 60
 parent: "模块六：多代理与高级特性"
 ---

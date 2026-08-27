@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch12 MCP 协议全解"
+title: "12 MCP 协议全解"
 nav_order: 50
 parent: "模块五：扩展生态"
 ---

@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch10 权限系统"
+title: "10 权限系统"
 nav_order: 40
 parent: "模块四：权限与安全"
 ---

@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch15 终端 UI 与输入交互"
+title: "15 终端 UI 与输入交互"
 nav_order: 53
 parent: "模块五：扩展生态"
 ---

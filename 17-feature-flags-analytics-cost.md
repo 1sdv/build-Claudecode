@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch17 Feature Flags、Analytics、Cost Tracking"
+title: "17 Feature Flags & Analytics"
 nav_order: 61
 parent: "模块六：多代理与高级特性"
 ---

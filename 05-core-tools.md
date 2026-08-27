@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch05 核心工具深度剖析"
+title: "05 核心工具深度剖析"
 nav_order: 21
 parent: "模块二：工具系统"
 ---

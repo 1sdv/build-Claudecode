@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch03 Agent 主循环"
+title: "03 Agent 主循环"
 nav_order: 12
 parent: "模块一：架构与启动"
 ---

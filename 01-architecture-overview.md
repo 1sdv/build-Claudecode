@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch01 AI 编程代理全景图"
+title: "01 AI 编程代理全景图"
 nav_order: 10
 parent: "模块一：架构与启动"
 ---

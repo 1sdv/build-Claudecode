@@ -3,6 +3,7 @@ layout: default
 title: "模块六：多代理与高级特性"
 nav_order: 60
 has_children: true
+nav_fold: false
 ---
 
 # 模块六：多代理与高级特性

@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch07 对话上下文三层架构"
+title: "07 对话上下文三层架构"
 nav_order: 30
 parent: "模块三：上下文与记忆"
 ---

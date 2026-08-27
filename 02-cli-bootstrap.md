@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch02 CLI 启动流程"
+title: "02 CLI 启动流程"
 nav_order: 11
 parent: "模块一：架构与启动"
 ---

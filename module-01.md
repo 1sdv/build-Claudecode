@@ -3,6 +3,7 @@ layout: default
 title: "模块一：架构与启动"
 nav_order: 10
 has_children: true
+nav_fold: false
 ---
 
 # 模块一：架构与启动

@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch09 记忆系统与智能文档"
+title: "09 记忆系统与智能文档"
 nav_order: 32
 parent: "模块三：上下文与记忆"
 ---

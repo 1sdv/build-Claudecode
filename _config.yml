@@ -9,6 +9,8 @@ theme: just-the-docs
 # Color scheme
 color_scheme: dark
 
+nav_fold: false
+
 # Enable search
 search_enabled: true
 search:
@@ -22,13 +24,8 @@ search:
   focus_shortcut_key: "k"
 
 # Footer
-footer_content: '本课程内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议'
+footer_content: ''
 
-# Navigation external links
-nav_external_links:
-  - title: 掘金小册
-    url: https://juejin.cn/book/7657050404161355803
-    hide_icon: false
 
 # Markdown settings
 markdown: kramdown

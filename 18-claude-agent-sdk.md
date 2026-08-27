@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch18 Claude Agent SDK"
+title: "18 Claude Agent SDK"
 nav_order: 62
 parent: "模块六：多代理与高级特性"
 ---

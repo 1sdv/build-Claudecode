@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch21 项目二：自定义 MCP Server"
+title: "21 项目：自定义 MCP Server"
 nav_order: 71
 parent: "模块七：实战项目"
 ---

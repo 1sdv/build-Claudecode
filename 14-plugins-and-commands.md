@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch14 Plugins 与 Slash Commands"
+title: "14 Plugins 与 Slash Commands"
 nav_order: 52
 parent: "模块五：扩展生态"
 ---

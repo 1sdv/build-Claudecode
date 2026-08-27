@@ -18,7 +18,7 @@
   --sans: 'DM Sans', 'Noto Sans SC', system-ui, sans-serif;
   --serif: 'Instrument Serif', Georgia, serif;
   --mono: 'JetBrains Mono', 'Consolas', monospace;
-  --sidebar-w: 260px;
+  --sidebar-w: 300px;
 }
 
 /* ── Reset & Base ─────────────────────────────────────────── */
@@ -288,4 +288,13 @@ body {
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #3a3a58; }
-</style>
+
+/* 隐藏 "This site uses Just the Docs" */
+.site-footer ul li:last-child { display: none !important; }
+.site-footer ul li:first-child:last-child { display: block !important; }
+
+/* 隐藏侧边栏展开/折叠箭头（始终展开状态） */
+.nav-list-expander { display: none !important; }
+
+/* 确保子列表始终显示 */
+.nav-list .nav-list { display: block !important; }</style>

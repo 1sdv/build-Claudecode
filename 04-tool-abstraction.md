@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch04 Tool 抽象与注册机制"
+title: "04 Tool 抽象与注册机制"
 nav_order: 20
 parent: "模块二：工具系统"
 ---

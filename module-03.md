@@ -3,6 +3,7 @@ layout: default
 title: "模块三：上下文与记忆"
 nav_order: 30
 has_children: true
+nav_fold: false
 ---
 
 # 模块三：上下文与记忆

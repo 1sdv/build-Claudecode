@@ -3,6 +3,7 @@ layout: default
 title: "模块二：工具系统"
 nav_order: 20
 has_children: true
+nav_fold: false
 ---
 
 # 模块二：工具系统

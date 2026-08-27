@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch19 Bridge & Remote"
+title: "19 Bridge & Remote"
 nav_order: 63
 parent: "模块六：多代理与高级特性"
 ---

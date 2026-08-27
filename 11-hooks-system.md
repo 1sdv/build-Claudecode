@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch11 Hooks 系统"
+title: "11 Hooks 系统"
 nav_order: 41
 parent: "模块四：权限与安全"
 ---

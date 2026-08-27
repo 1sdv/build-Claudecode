@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch08 上下文压缩四策略"
+title: "08 上下文压缩四策略"
 nav_order: 31
 parent: "模块三：上下文与记忆"
 ---

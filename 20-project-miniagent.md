@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch20 项目一：MiniAgent"
+title: "20 项目：MiniAgent"
 nav_order: 70
 parent: "模块七：实战项目"
 ---

@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch13 Skills 系统全解"
+title: "13 Skills 系统全解"
 nav_order: 51
 parent: "模块五：扩展生态"
 ---

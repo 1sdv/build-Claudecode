@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: "Ch22 项目三：多代理协作系统"
+title: "22 项目：多代理协作系统"
 nav_order: 72
 parent: "模块七：实战项目"
 ---
