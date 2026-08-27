@@ -21,6 +21,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Strip UTF-8 BOM from all Markdown files
+        run: |
+          python3 -c "
+          import os
+          count = 0
+          for root, dirs, files in os.walk('.'):
+              dirs[:] = [d for d in dirs if d not in ['.git', '_site', 'vendor', 'node_modules']]
+              for fname in files:
+                  if fname.endswith('.md'):
+                      fpath = os.path.join(root, fname)
+                      with open(fpath, 'rb') as f:
+                          content = f.read()
+                      if content.startswith(b'\xef\xbb\xbf'):
+                          with open(fpath, 'wb') as f:
+                              f.write(content[3:])
+                          count += 1
+                          print(f'BOM removed: {fpath}')
+          print(f'Total files fixed: {count}')
+          "
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -38,16 +58,19 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Debug - List _site root
+      - name: Debug - Verify _site
         run: |
-          echo "=== base_path: ${{ steps.pages.outputs.base_path }} ==="
-          echo "=== _site root files ==="
-          ls -la _site/ | head -30
+          echo "=== _site root (all files) ==="
+          ls -la _site/
+          echo ""
           echo "=== index.html exists? ==="
-          test -f _site/index.html && echo "YES - index.html found" || echo "NO - index.html MISSING"
-          echo "=== Total files in _site ==="
+          test -f _site/index.html && echo "YES" || echo "NO"
+          echo ""
+          echo "=== All HTML files in _site ==="
+          find _site -name "*.html" | head -20
+          echo ""
+          echo "=== Total ==="
           find _site -type f | wc -l
-          echo "=== Total size ==="
           du -sh _site/
 
       - name: Upload artifact
