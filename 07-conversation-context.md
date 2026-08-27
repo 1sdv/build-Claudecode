@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch07 对话上下文三层架构"
+nav_order: 30
+parent: "模块三：上下文与记忆"
 ---
-n: 7
-chapter: "模块三 上下文与记忆"
-title: "对话上下文三层架构"
-generated_at: "2026-05-01T10:02:09.768592"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第七章: 对话上下文三层架构
 

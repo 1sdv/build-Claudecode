@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch19 Bridge & Remote"
+nav_order: 63
+parent: "模块六：多代理与高级特性"
 ---
-n: 19
-chapter: "模块六 多代理与高级特性"
-title: "Bridge & Remote — 跨设备协作"
-generated_at: "2026-05-01T10:02:09.779151"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第十九章：Bridge & Remote — 跨设备协作
 

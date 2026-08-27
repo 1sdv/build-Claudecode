@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch04 Tool 抽象与注册机制"
+nav_order: 20
+parent: "模块二：工具系统"
 ---
-n: 4
-chapter: "模块二 工具系统"
-title: "Tool 抽象与注册"
-generated_at: "2026-05-01T10:02:09.766535"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第四章：Tool 抽象与注册机制
 

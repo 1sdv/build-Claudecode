@@ -1,3 +1,10 @@
+﻿---
+layout: home
+title: 首页
+nav_order: 1
+description: "深入 Claude Code 源码：从架构到实践，构建你自己的 AI 编程代理"
+permalink: /
+---
 # 深入 Claude Code 源码：从架构到实践，构建你自己的 AI 编程代理
 
 > 一门面向开发者的系统课程，通过逐层剖析 Claude Code v2.1.88 的真实源码，系统掌握 AI 编程代理的工程实现，并通过三个完整可落地的实战项目把所学应用起来。

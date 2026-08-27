@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch02 CLI 启动流程"
+nav_order: 11
+parent: "模块一：架构与启动"
 ---
-n: 2
-chapter: "模块一 架构与启动"
-title: "CLI 启动流程：从命令行到 REPL"
-generated_at: "2026-05-01T10:02:09.765127"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第二章：CLI 启动流程——从命令行到 REPL
 

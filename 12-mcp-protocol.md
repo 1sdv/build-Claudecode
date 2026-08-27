@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch12 MCP 协议全解"
+nav_order: 50
+parent: "模块五：扩展生态"
 ---
-n: 12
-chapter: "模块五 扩展生态"
-title: "MCP 协议全解：传输层 → 五大原语 → OAuth"
-generated_at: "2026-05-01T10:02:09.773022"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第十二章：MCP 协议全解——传输层 → 五大原语 → OAuth
 

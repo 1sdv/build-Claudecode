@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch01 AI 编程代理全景图"
+nav_order: 10
+parent: "模块一：架构与启动"
 ---
-n: 1
-chapter: "模块一 架构与启动"
-title: "AI 编程代理全景图"
-generated_at: "2026-05-01T10:02:09.764363"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第一章：AI 编程代理全景图
 

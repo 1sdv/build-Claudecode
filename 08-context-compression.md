@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch08 上下文压缩四策略"
+nav_order: 31
+parent: "模块三：上下文与记忆"
 ---
-n: 8
-chapter: "模块三 上下文与记忆"
-title: "上下文压缩四策略"
-generated_at: "2026-05-01T10:02:09.769492"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第八章：上下文压缩四策略——让 Agent 在有限窗口中永续运转
 

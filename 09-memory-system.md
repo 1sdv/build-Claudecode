@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch09 记忆系统与智能文档"
+nav_order: 32
+parent: "模块三：上下文与记忆"
 ---
-n: 9
-chapter: "模块三 上下文与记忆"
-title: "记忆系统与智能文档"
-generated_at: "2026-05-01T10:02:09.770722"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第九章：记忆系统与智能文档（SessionMemory / MagicDocs）
 

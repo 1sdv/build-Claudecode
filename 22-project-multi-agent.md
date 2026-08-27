@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch22 项目三：多代理协作系统"
+nav_order: 72
+parent: "模块七：实战项目"
 ---
-n: 22
-chapter: "模块七 实战项目"
-title: "项目三：构建多代理协作系统"
-generated_at: "2026-05-01T10:02:09.782153"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第二十二章：项目三——构建多代理协作系统
 

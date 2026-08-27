@@ -1,11 +1,9 @@
----
-n: 0
-chapter: "开篇"
+﻿---
+layout: default
 title: "课前准备——环境搭建与源码导览"
-generated_at: "2026-05-01T10:02:09.763699"
-generated_by: "course-restructure-v2"
-author: "anonymous"
+nav_order: 2
 ---
+
 
 # 开篇：课前准备——环境搭建与源码导览
 

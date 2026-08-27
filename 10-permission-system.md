@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch10 权限系统"
+nav_order: 40
+parent: "模块四：权限与安全"
 ---
-n: 10
-chapter: "模块四 权限与安全"
-title: "权限系统：5 模式 + 多路竞赛"
-generated_at: "2026-05-01T10:02:09.771433"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第十章：权限系统——五模式 + 多路竞赛
 

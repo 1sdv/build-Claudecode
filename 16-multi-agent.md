@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch16 多代理系统"
+nav_order: 60
+parent: "模块六：多代理与高级特性"
 ---
-n: 16
-chapter: "模块六 多代理与高级特性"
-title: "多代理系统：7 种 Task / Swarm / Coordinator"
-generated_at: "2026-05-01T10:02:09.776277"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第十六章 多代理系统 -- Tasks / Swarm / Coordinator / Agent Teams
 

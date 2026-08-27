@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch13 Skills 系统全解"
+nav_order: 51
+parent: "模块五：扩展生态"
 ---
-n: 13
-chapter: "模块五 扩展生态"
-title: "Skills 系统全解（17 bundled skills）"
-generated_at: "2026-05-01T10:02:09.773854"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第十三章 Skills 体系：从加载源到调度器
 

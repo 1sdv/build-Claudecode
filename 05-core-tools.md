@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch05 核心工具深度剖析"
+nav_order: 21
+parent: "模块二：工具系统"
 ---
-n: 5
-chapter: "模块二 工具系统"
-title: "核心工具深度剖析"
-generated_at: "2026-05-01T10:02:09.767232"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第五章: 核心工具深度剖析
 

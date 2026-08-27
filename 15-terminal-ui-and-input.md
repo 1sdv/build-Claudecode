@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch15 终端 UI 与输入交互"
+nav_order: 53
+parent: "模块五：扩展生态"
 ---
-n: 15
-chapter: "模块五 扩展生态"
-title: "终端 UI 与输入交互"
-generated_at: "2026-05-01T10:02:09.775530"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第十五章 终端 UI 与输入系统（React/Ink + Vim + Keybindings + Buddy + Output Styles）
 

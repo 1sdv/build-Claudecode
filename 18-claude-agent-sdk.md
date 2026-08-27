@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch18 Claude Agent SDK"
+nav_order: 62
+parent: "模块六：多代理与高级特性"
 ---
-n: 18
-chapter: "模块六 多代理与高级特性"
-title: "Claude Agent SDK：双接口 / 装饰器 / V2 API"
-generated_at: "2026-05-01T10:02:09.778006"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第十八章：Claude Agent SDK
 

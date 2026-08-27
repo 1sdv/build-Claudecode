@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch17 Feature Flags、Analytics、Cost Tracking"
+nav_order: 61
+parent: "模块六：多代理与高级特性"
 ---
-n: 17
-chapter: "模块六 多代理与高级特性"
-title: "Feature Flags、Analytics、Cost Tracking"
-generated_at: "2026-05-01T10:02:09.777020"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第十七章 Feature Flags、Analytics、Cost Tracking
 

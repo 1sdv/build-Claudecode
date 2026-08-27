@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch20 项目一：MiniAgent"
+nav_order: 70
+parent: "模块七：实战项目"
 ---
-n: 20
-chapter: "模块七 实战项目"
-title: "项目一：从零构建 MiniAgent"
-generated_at: "2026-05-01T10:02:09.780268"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第二十章：项目一 -- 从零构建 MiniAgent
 

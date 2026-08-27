@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch06 流式执行引擎"
+nav_order: 22
+parent: "模块二：工具系统"
 ---
-n: 6
-chapter: "模块二 工具系统"
-title: "流式执行引擎：StreamingToolExecutor"
-generated_at: "2026-05-01T10:02:09.767896"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第六章：流式执行引擎——StreamingToolExecutor
 

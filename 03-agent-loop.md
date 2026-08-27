@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch03 Agent 主循环"
+nav_order: 12
+parent: "模块一：架构与启动"
 ---
-n: 3
-chapter: "模块一 架构与启动"
-title: "Agent 主循环：query() 的 while(true)"
-generated_at: "2026-05-01T10:02:09.765792"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第三章：Agent 主循环——query() 的 while(true)
 

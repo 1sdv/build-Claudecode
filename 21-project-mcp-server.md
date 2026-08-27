@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch21 项目二：自定义 MCP Server"
+nav_order: 71
+parent: "模块七：实战项目"
 ---
-n: 21
-chapter: "模块七 实战项目"
-title: "项目二：开发自定义 MCP Server"
-generated_at: "2026-05-01T10:02:09.781300"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第二十一章：项目二——开发自定义 MCP Server
 

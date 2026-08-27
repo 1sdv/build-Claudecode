@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch14 Plugins 与 Slash Commands"
+nav_order: 52
+parent: "模块五：扩展生态"
 ---
-n: 14
-chapter: "模块五 扩展生态"
-title: "Plugins 与 Slash Commands（86 个命令）"
-generated_at: "2026-05-01T10:02:09.774613"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第十四章 Plugins 与 Slash Commands——可分发的能力包与统一调用接口
 

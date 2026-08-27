@@ -1,0 +1,54 @@
+﻿title: "深入 Claude Code 源码：构建 AI 编程代理"
+description: "面向开发者的系统课程，通过逐层剖析 Claude Code v2.1.88 的真实源码，系统掌握 AI 编程代理的工程实现"
+baseurl: "/build-code-agent"
+url: "https://jiji262.github.io"
+
+# Theme
+remote_theme: just-the-docs/just-the-docs@v0.10.0
+
+# Color scheme
+color_scheme: dark
+
+# Enable search
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+  focus_shortcut_key: "k"
+
+# Footer
+footer_content: '本课程内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议'
+
+# Navigation external links
+nav_external_links:
+  - title: 掘金小册
+    url: https://juejin.cn/book/7657050404161355803
+    hide_icon: false
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - legacy-v1/
+  - .git/
+  - .gitignore
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

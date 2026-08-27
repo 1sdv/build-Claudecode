@@ -1,11 +1,10 @@
+﻿---
+layout: default
+title: "Ch11 Hooks 系统"
+nav_order: 41
+parent: "模块四：权限与安全"
 ---
-n: 11
-chapter: "模块四 权限与安全"
-title: "Hooks 系统：27 事件 × 5 处理器"
-generated_at: "2026-05-01T10:02:09.772148"
-generated_by: "course-restructure-v2"
-author: "anonymous"
----
+
 
 # 第十一章：Hooks 系统——27 事件 x 5 处理器类型
 
