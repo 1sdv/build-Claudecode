@@ -1,3 +1,291 @@
 ﻿<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   深色专业文档主题 - 参考 cc-harness 风格
+   ============================================================ */
+
+:root {
+  --bg: #0c0c14;
+  --surface: #141420;
+  --border: #222238;
+  --text: #e2e0dd;
+  --text-dim: #8888a0;
+  --heading: #f0eee8;
+  --accent: #818cf8;
+  --accent-bg: rgba(129,140,248,0.10);
+  --code-bg: #1a1a2e;
+  --sans: 'DM Sans', 'Noto Sans SC', system-ui, sans-serif;
+  --serif: 'Instrument Serif', Georgia, serif;
+  --mono: 'JetBrains Mono', 'Consolas', monospace;
+  --sidebar-w: 260px;
+}
+
+/* ── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  font-family: var(--sans) !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* ── 侧边栏 ───────────────────────────────────────────────── */
+.side-bar {
+  background: var(--surface) !important;
+  border-right: 1px solid var(--border) !important;
+  width: var(--sidebar-w) !important;
+  min-width: var(--sidebar-w) !important;
+}
+
+/* 站点标题 */
+.site-title {
+  font-family: var(--serif) !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  padding: 16px 18px !important;
+  color: var(--heading) !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  border-bottom: 1px solid var(--border) !important;
+  word-break: keep-all !important;
+  overflow-wrap: break-word !important;
+}
+
+/* 搜索框区域 */
+.search {
+  background: var(--surface) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+.search-input {
+  background: transparent !important;
+  color: var(--text) !important;
+  font-family: var(--sans) !important;
+  font-size: 13px !important;
+}
+.search-input::placeholder { color: var(--text-dim) !important; }
+
+/* ── 导航列表 ─────────────────────────────────────────────── */
+.nav-list { padding: 8px 0 !important; }
+.nav-list-item { margin: 0 !important; }
+
+/* 所有导航链接 */
+.nav-list-link {
+  font-family: var(--sans) !important;
+  font-size: 12.5px !important;
+  color: var(--text-dim) !important;
+  padding: 5px 18px !important;
+  line-height: 1.4 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+  border-radius: 0 !important;
+  transition: color 0.15s, background 0.15s !important;
+}
+.nav-list-link:hover {
+  color: var(--accent) !important;
+  background: var(--accent-bg) !important;
+}
+.nav-list-link.active {
+  color: var(--accent) !important;
+  font-weight: 600 !important;
+  background: var(--accent-bg) !important;
+  border-right: 2px solid var(--accent) !important;
+}
+
+/* 父级（模块）标题 */
+.nav-list > .nav-list-item > .nav-list-link {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+}
+
+/* 二级（章节）链接 */
+.nav-list .nav-list .nav-list-link {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  padding-left: 30px !important;
+  color: var(--text-dim) !important;
+}
+
+/* 展开箭头 */
+.nav-list-expander {
+  color: var(--text-dim) !important;
+  flex-shrink: 0 !important;
+}
+.nav-list-expander svg { fill: currentColor !important; }
+
+/* ── 外部链接 ─────────────────────────────────────────────── */
+.nav-external-links { border-top: 1px solid var(--border) !important; padding: 8px 0 !important; }
+.nav-external-links a {
+  font-size: 12px !important;
+  color: var(--text-dim) !important;
+  padding: 5px 18px !important;
+}
+
+/* ── 主内容区 ─────────────────────────────────────────────── */
+.main {
+  background: var(--bg) !important;
+}
+.main-content-wrap {
+  max-width: 880px !important;
+  padding: 40px 48px !important;
+}
+
+/* ── 文章标题 ─────────────────────────────────────────────── */
+.main-content h1 {
+  font-family: var(--serif) !important;
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  color: var(--heading) !important;
+  line-height: 1.35 !important;
+  border-bottom: 1px solid var(--border) !important;
+  padding-bottom: 16px !important;
+  margin-bottom: 24px !important;
+}
+.main-content h2 {
+  font-family: var(--serif) !important;
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+  color: var(--heading) !important;
+  border-bottom: 1px solid var(--border) !important;
+  padding-bottom: 8px !important;
+  margin-top: 48px !important;
+}
+.main-content h3 {
+  font-family: var(--sans) !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: var(--accent) !important;
+  margin-top: 32px !important;
+}
+.main-content h4 {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
+}
+
+/* ── 段落与文字 ───────────────────────────────────────────── */
+.main-content p {
+  color: var(--text) !important;
+  line-height: 1.85 !important;
+  margin-bottom: 16px !important;
+}
+.main-content li {
+  color: var(--text) !important;
+  line-height: 1.8 !important;
+}
+.main-content a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+}
+.main-content a:hover { text-decoration: underline !important; }
+
+/* ── 代码 ─────────────────────────────────────────────────── */
+.main-content p code,
+.main-content li code,
+.main-content td code,
+.main-content h3 code {
+  font-family: var(--mono) !important;
+  font-size: 0.83em !important;
+  background: var(--code-bg) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  padding: 1px 6px !important;
+  color: #a5b4fc !important;
+}
+.highlight, .highlighter-rouge {
+  background: var(--code-bg) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  margin: 20px 0 !important;
+  overflow: auto !important;
+}
+.highlight pre {
+  font-family: var(--mono) !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+  padding: 18px 22px !important;
+  margin: 0 !important;
+  background: transparent !important;
+  color: #c9d1d9 !important;
+}
+
+/* ── 表格 ─────────────────────────────────────────────────── */
+.main-content table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 14px !important;
+  margin: 20px 0 !important;
+}
+.main-content table th {
+  background: var(--surface) !important;
+  color: var(--heading) !important;
+  font-weight: 600 !important;
+  padding: 10px 16px !important;
+  border: 1px solid var(--border) !important;
+  text-align: left !important;
+}
+.main-content table td {
+  padding: 9px 16px !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+  vertical-align: top !important;
+}
+.main-content table tr:nth-child(even) td {
+  background: rgba(20,20,32,0.5) !important;
+}
+
+/* ── 引用块 ───────────────────────────────────────────────── */
+.main-content blockquote {
+  border-left: 3px solid var(--accent) !important;
+  background: var(--accent-bg) !important;
+  margin: 20px 0 !important;
+  padding: 14px 20px !important;
+  border-radius: 0 6px 6px 0 !important;
+}
+.main-content blockquote p {
+  margin: 0 !important;
+  color: var(--text-dim) !important;
+  font-size: 0.95em !important;
+}
+
+/* ── 图片 ─────────────────────────────────────────────────── */
+.main-content img {
+  max-width: 100% !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--border) !important;
+  margin: 16px 0 !important;
+  display: block !important;
+}
+
+/* ── 页脚 ─────────────────────────────────────────────────── */
+.site-footer {
+  background: var(--surface) !important;
+  border-top: 1px solid var(--border) !important;
+  color: var(--text-dim) !important;
+  font-size: 12px !important;
+}
+
+/* ── 搜索结果 ─────────────────────────────────────────────── */
+.search-results {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+}
+.search-result-title { color: var(--heading) !important; }
+.search-result-preview { color: var(--text-dim) !important; }
+
+/* ── 滚动条 ───────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3a58; }
+</style>
