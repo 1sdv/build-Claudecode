@@ -1,7 +1,7 @@
 ﻿title: "深入 Claude Code 源码：构建 AI 编程代理"
 description: "面向开发者的系统课程，通过逐层剖析 Claude Code v2.1.88 的真实源码，系统掌握 AI 编程代理的工程实现"
-baseurl: "/build-code-agent"
-url: "https://jiji262.github.io"
+baseurl: "/build-Claudecode"
+url: "https://1sdv.github.io"
 
 # Theme
 remote_theme: just-the-docs/just-the-docs@v0.10.0
@@ -52,3 +52,4 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
