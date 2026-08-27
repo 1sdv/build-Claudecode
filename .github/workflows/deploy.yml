@@ -38,6 +38,18 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: Debug - List _site root
+        run: |
+          echo "=== base_path: ${{ steps.pages.outputs.base_path }} ==="
+          echo "=== _site root files ==="
+          ls -la _site/ | head -30
+          echo "=== index.html exists? ==="
+          test -f _site/index.html && echo "YES - index.html found" || echo "NO - index.html MISSING"
+          echo "=== Total files in _site ==="
+          find _site -type f | wc -l
+          echo "=== Total size ==="
+          du -sh _site/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
