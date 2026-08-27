@@ -4,7 +4,7 @@ baseurl: "/build-Claudecode"
 url: "https://1sdv.github.io"
 
 # Theme
-remote_theme: just-the-docs/just-the-docs@v0.10.0
+theme: just-the-docs
 
 # Color scheme
 color_scheme: dark
