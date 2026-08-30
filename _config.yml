@@ -1,4 +1,4 @@
-﻿title: "深入 Claude Code 源码：构建 AI 编程代理"
+title: "深入 Claude Code 源码：构建 AI 编程代理"
 description: "面向开发者的系统课程，通过逐层剖析 Claude Code v2.1.88 的真实源码，系统掌握 AI 编程代理的工程实现"
 baseurl: "/build-Claudecode"
 url: "https://1sdv.github.io"
@@ -9,23 +9,23 @@ theme: just-the-docs
 # Color scheme
 color_scheme: dark
 
+# Navigation
 nav_fold: false
 
-# Enable search
+# Search - full-text across all pages
 search_enabled: true
 search:
-  heading_level: 2
-  previews: 3
-  preview_words_before: 5
-  preview_words_after: 10
-  tokenizer_separator: /[\s/]+/
+  heading_level: 3
+  previews: 5
+  preview_words_before: 8
+  preview_words_after: 15
+  tokenizer_separator: /[\s\-\/\.]+/
   rel_url: true
   button: false
   focus_shortcut_key: "k"
 
 # Footer
 footer_content: ''
-
 
 # Markdown settings
 markdown: kramdown
@@ -49,4 +49,3 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-
