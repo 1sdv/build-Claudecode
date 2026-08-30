@@ -211,7 +211,7 @@ body {
 }
 .highlight pre {
   font-family: var(--mono) !important;
-  font-size: 13px !important;
+  font-size: 15px !important;
   line-height: 1.6 !important;
   padding: 18px 22px !important;
   margin: 0 !important;
@@ -296,4 +296,134 @@ body {
 .nav-list-expander { display: none !important; }
 
 /* 确保子列表始终显示 */
-.nav-list .nav-list { display: block !important; }</style>
+.nav-list .nav-list { display: block !important; }
+
+/* ── 右侧目录导航 (TOC) ─────────────────────────────────── */
+.toc-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  padding: 72px 14px 40px 16px;
+  z-index: 50;
+  scrollbar-width: thin;
+}
+.toc-panel-title {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.toc-link {
+  display: block;
+  color: var(--text-dim);
+  padding: 4px 0 4px 10px;
+  border-left: 2px solid transparent;
+  font-size: 12px;
+  line-height: 1.4;
+  text-decoration: none !important;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.toc-link:hover {
+  color: var(--text) !important;
+  border-left-color: var(--border);
+}
+.toc-link.toc-active {
+  color: var(--accent) !important;
+  border-left-color: var(--accent);
+  font-weight: 500;
+}
+.toc-link.toc-h3 {
+  padding-left: 22px;
+  font-size: 11.5px;
+}
+/* 屏幕够宽时才显示右侧目录 */
+@media (min-width: 1380px) {
+  body.has-toc .main { margin-right: 220px !important; }
+}
+@media (max-width: 1379px) {
+  .toc-panel { display: none !important; }
+}
+</style>
+
+<script>
+(function(){
+  // 仅在章节页（URL 含 /NN- 数字前缀）显示右侧目录
+  var path = window.location.pathname;
+  if (!/\/\d{2}-/.test(path)) return;
+
+  function buildToc() {
+    var content = document.querySelector('.main-content');
+    if (!content) return;
+    var headings = content.querySelectorAll('h2, h3');
+    if (headings.length < 2) return;
+
+    // 为标题生成唯一 id
+    var usedIds = {};
+    headings.forEach(function(h) {
+      if (!h.id) {
+        var base = h.textContent.trim()
+          .replace(/\s+/g, '-')
+          .replace(/[^\w\u4e00-\u9fa5-]/g, '')
+          .toLowerCase()
+          .slice(0, 40);
+        var id = base, n = 1;
+        while (usedIds[id]) { id = base + '-' + (n++); }
+        usedIds[id] = true;
+        h.id = id;
+      }
+    });
+
+    // 创建面板
+    var panel = document.createElement('div');
+    panel.className = 'toc-panel';
+    panel.innerHTML = '<div class="toc-panel-title">本页目录</div>';
+
+    var items = [];
+    headings.forEach(function(h) {
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.className = 'toc-link' + (h.tagName === 'H3' ? ' toc-h3' : '');
+      a.textContent = h.textContent.trim();
+      a.title = h.textContent.trim();
+      panel.appendChild(a);
+      items.push({ el: h, a: a });
+    });
+
+    document.body.appendChild(panel);
+    document.body.classList.add('has-toc');
+
+    // 滚动时高亮当前节
+    function highlight() {
+      var active = items[0];
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].el.getBoundingClientRect().top <= 120) {
+          active = items[i];
+        }
+      }
+      items.forEach(function(item) {
+        item.a.classList.toggle('toc-active', item === active);
+      });
+    }
+    window.addEventListener('scroll', highlight, { passive: true });
+    highlight();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', buildToc);
+  } else {
+    buildToc();
+  }
+})();
+</script>
