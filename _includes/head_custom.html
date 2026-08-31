@@ -368,34 +368,34 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 220px;
+    width: 280px;
     height: 100vh;
     overflow-y: auto;
     background: var(--surface);
     border-left: 1px solid var(--border);
-    padding: 72px 14px 40px 16px;
+    padding: 72px 18px 40px 20px;
     z-index: 50;
     scrollbar-width: thin;
   }
 
   .toc-panel-title {
-    font-size: 10.5px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.07em;
     color: var(--text-dim);
-    margin-bottom: 12px;
-    padding-bottom: 8px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
     border-bottom: 1px solid var(--border);
   }
 
   .toc-link {
     display: block;
     color: var(--text-dim);
-    padding: 4px 0 4px 10px;
+    padding: 5px 0 5px 12px;
     border-left: 2px solid transparent;
-    font-size: 12px;
-    line-height: 1.4;
+    font-size: 13.5px;
+    line-height: 1.45;
     text-decoration: none !important;
     transition: color 0.15s, border-color 0.15s;
     white-space: nowrap;
@@ -415,8 +415,8 @@
   }
 
   .toc-link.toc-h3 {
-    padding-left: 22px;
-    font-size: 11.5px;
+    padding-left: 26px;
+    font-size: 12.5px;
   }
 
   /* 屏幕够宽时才显示右侧目录 */
@@ -424,12 +424,12 @@
 
     /* main 区域向右留出 TOC 空间 */
     body.has-toc .main {
-      margin-right: 220px !important;
+      margin-right: 280px !important;
     }
 
     /* 搜索栏（顶部 header）宽度也需要限制 */
     body.has-toc .main-header {
-      right: 220px !important;
+      right: 280px !important;
     }
 
     /* 内容区域在剩余空间居中 */
