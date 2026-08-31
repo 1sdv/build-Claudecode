@@ -92,7 +92,7 @@
   /* 所有导航链接 */
   .nav-list-link {
     font-family: var(--sans) !important;
-    font-size: 12.5px !important;
+    font-size: 14px !important;
     color: var(--text-dim) !important;
     padding: 5px 18px !important;
     line-height: 1.4 !important;
@@ -118,7 +118,7 @@
 
   /* 父级（模块）标题 */
   .nav-list>.nav-list-item>.nav-list-link {
-    font-size: 12px !important;
+    font-size: 14px !important;
     font-weight: 600 !important;
     color: var(--text) !important;
     letter-spacing: 0.02em !important;
@@ -127,7 +127,7 @@
 
   /* 二级（章节）链接 */
   .nav-list .nav-list .nav-list-link {
-    font-size: 12px !important;
+    font-size: 13px !important;
     font-weight: 400 !important;
     padding-left: 30px !important;
     color: var(--text-dim) !important;
@@ -432,10 +432,10 @@
       right: 280px !important;
     }
 
-    /* 内容区域在剩余空间居中 */
+    /* 内容区域：左对齐，右侧留出与 TOC 的间距 */
     body.has-toc .main-content-wrap {
-      margin-left: auto !important;
-      margin-right: auto !important;
+      margin-left: 0 !important;
+      margin-right: 48px !important;
     }
   }
 
